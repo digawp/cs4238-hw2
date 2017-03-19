@@ -14,6 +14,9 @@ stack: stack.c
 exploit: exploit.c
 	gcc -o exploit exploit.c
 
+obfuscated: obfuscated.c
+	gcc -o obfuscated obfuscated.c
+
 shellcode: shellcode.c
 	gcc -o call_shellcode shellcode.c
 	execstack -s shellcode
